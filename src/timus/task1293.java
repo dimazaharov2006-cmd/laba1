@@ -1,18 +1,20 @@
 package timus;
+import java.io.PrintWriter;
 import java.util.Scanner;
 public class task1293 {
     static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
+        PrintWriter out = new PrintWriter(System.out);
 
-        System.out.println("Введите количество прямоугольных панелей(N) = ");
         int N = in.nextInt();
-
-        System.out.println("Длина прямоугольника (в метрах) = ");
         int A = in.nextInt();
-
-        System.out.println("Ширина прямоугольника (в метрах) = ");
         int B = in.nextInt();
 
-        System.out.println("Необходимо сульфида тория - " + (A * B * N * 2) + " 10^-9 г.");
+        int result = (A * B * N * 2);
+
+        out.println(result);
+        out.flush();
+
     }
 }
